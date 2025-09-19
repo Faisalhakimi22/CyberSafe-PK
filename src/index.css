@@ -193,6 +193,16 @@
     animation: sweep 3s ease-in-out infinite;
   }
   
+  /* Fixed navbar */
+  .navbar-fixed {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100vw !important;
+    z-index: 9999 !important;
+  }
+  
   @keyframes sweep {
     0% { transform: translateX(-100%) skewX(-15deg); }
     100% { transform: translateX(200%) skewX(-15deg); }

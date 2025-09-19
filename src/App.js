@@ -516,10 +516,12 @@ function Navigation() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-      ? 'bg-deepblue-900/95 backdrop-blur-md shadow-lg'
-      : 'bg-deepblue-900'
-      }`}>
+    <nav 
+      className={`navbar-fixed transition-all duration-300 ${isScrolled
+        ? 'bg-deepblue-900/95 backdrop-blur-md shadow-lg'
+        : 'bg-deepblue-900'
+      }`}
+    >
       <div className="max-w-full mx-auto px-4">
         <div className="flex items-center justify-between" style={{ minHeight: '180px', padding: '10px 0' }}>
           {/* Logo Section - Positioned more to the left */}
