@@ -48,8 +48,8 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen">
-        <Navigation />
-        <main className="pt-[180px]">
+        <Header />
+        <main>
           <Routes>
             <Route path="/" element={<HomePage username={username} />} />
             <Route path="/complaints" element={<Complaints />} />
@@ -501,89 +501,15 @@ Continue as Guest
   );
 }
 
-function Navigation() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setIsScrolled(scrollTop > 10);
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  return (
-    <nav 
-      className={`navbar-fixed transition-all duration-300 ${isScrolled
-        ? 'bg-deepblue-900/95 backdrop-blur-md shadow-lg'
-        : 'bg-deepblue-900'
-      }`}
-    >
-      <div className="max-w-full mx-auto px-4">
-        <div className="flex items-center justify-between" style={{ minHeight: '180px', padding: '10px 0' }}>
-          {/* Logo Section - Positioned more to the left */}
-          <Link to="/" className="flex items-center space-x-3 group flex-shrink-0">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="transition-all duration-300 relative"
-            >
-              {/* Logo with integrated lock icon in 'O' */}
-              <div className="flex items-center space-x-1">
-                <img 
-                  src="\CyberSafePk _Logo_3.png" 
-                  alt="CyberSafe PK Logo" 
-                  className="object-contain"
-                  style={{ height: '140px', width: '140px' }}
-                />
-                <div className="text-white ml-2">
-                  <div className="text-2xl font-bold tracking-wide bg-gradient-to-r from-white to-teal-100 bg-clip-text text-transparent">
-                    CYBERSAFE PK
-                  </div>
-                  <div className="text-xs font-medium text-teal-200 tracking-wider uppercase mt-1">
-                    Cybercrime Protection Platform
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </Link>
-
-          {/* Navigation Links - More space allocated */}
-          <div className="hidden lg:flex items-center space-x-6 flex-1 justify-end mr-4">
-            <NavLink to="/" text="Home" isActive={location.pathname === '/'} />
-            <NavLink to="/upload" text="Scan & Verify" isActive={location.pathname === '/upload'} />
-            <NavLink to="/complaints" text="Report Complaint" isActive={location.pathname === '/complaints'} />
-            <NavLink to="/track" text="Track Case" isActive={location.pathname === '/track'} />
-            <NavLink to="/therapy-support" text="Therapy & Support" isActive={location.pathname.startsWith('/therapy-support')} />
-            <NavLink to="/news-insights" text="News & Insights" isActive={location.pathname.startsWith('/news-insights')} />
-            <NavLink to="/about" text="About Us" isActive={location.pathname === '/about'} />
-            <NavLink to="/resources" text="Learning Hub" isActive={location.pathname === '/resources'} />
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="lg:hidden">
-            <button className="text-white hover:text-teal-300 transition-colors duration-300">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
-}
 
 function NavLink({ to, text, isActive = false }) {
   return (
     <Link
       to={to}
-      className={`text-sm font-medium transition-all duration-300 hover:text-teal-300 relative ${
+      className={`text-sm font-semibold transition-all duration-300 hover:text-teal-300 relative px-3 py-2 rounded-lg hover:bg-white/10 ${
         isActive 
-          ? 'text-white border-b-2 border-teal-400 pb-1' 
-          : 'text-white/80'
+          ? 'text-white bg-teal-500/20 border-b-2 border-teal-400' 
+          : 'text-white/90'
       }`}
     >
       {text}
@@ -599,9 +525,69 @@ function NavLink({ to, text, isActive = false }) {
   );
 }
 
+function Header() {
+  const location = useLocation();
+  
+  return (
+    <div className="bg-deepblue-900">
+      <div className="max-w-7xl mx-auto pl-4 pr-6">
+        <div className="flex items-center justify-between" style={{ height: '160px' }}>
+          <div className="flex items-center space-x-6 mr-12">
+            <Link to="/" className="flex items-center space-x-4 group">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="transition-all duration-300 relative"
+              >
+                <div className="flex items-center space-x-4">
+                  <img 
+                    src="\CyberSafePk _Logo_3.png" 
+                    alt="CyberSafe PK Logo" 
+                    className="object-contain"
+                    style={{ height: '160px', width: '160px' }}
+                  />
+                  <div className="text-white ml-2">
+                    <div className="text-2xl font-bold tracking-wide bg-gradient-to-r from-white to-teal-100 bg-clip-text text-transparent leading-tight">
+                      CYBERSAFE PK
+                    </div>
+                    <div className="text-sm font-medium text-teal-200 tracking-wider uppercase mt-2 leading-relaxed">
+                      Cybercrime Protection Platform
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </Link>
+          </div>
+
+          {/* Navigation Links */}
+          <div className="hidden lg:flex items-center space-x-6 text-sm">
+            <NavLink to="/" text="Home" isActive={location.pathname === '/'} />
+            <NavLink to="/upload" text="Scan" isActive={location.pathname === '/upload'} />
+            <NavLink to="/complaints" text="Report" isActive={location.pathname === '/complaints'} />
+            <NavLink to="/track" text="Track" isActive={location.pathname === '/track'} />
+            <NavLink to="/therapy-support" text="Support" isActive={location.pathname.startsWith('/therapy-support')} />
+            <NavLink to="/news-insights" text="News" isActive={location.pathname.startsWith('/news-insights')} />
+            <NavLink to="/about" text="About" isActive={location.pathname === '/about'} />
+            <NavLink to="/resources" text="Learn" isActive={location.pathname === '/resources'} />
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="lg:hidden">
+            <button className="text-white hover:text-teal-300 transition-colors duration-300">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function HomePage({ username }) {
   return (
     <>
+
       {/* Hero Banner Section */}
       <div className="relative overflow-hidden" style={{
         backgroundImage: 'url(/images/Gemini_Generated_Image_vemn1nvemn1nvemn.png)',

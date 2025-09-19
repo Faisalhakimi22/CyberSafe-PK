@@ -7,6 +7,13 @@
   * {
     @apply border-softgray-200;
   }
+  
+  .navbar-fixed * {
+    border: none !important;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-gradient-to-br from-softgray-50 via-deepblue-50 to-violet-50 text-softgray-900 font-body;
     background-attachment: fixed;
@@ -199,8 +206,36 @@
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
-    width: 100vw !important;
-    z-index: 9999 !important;
+    width: 100% !important;
+    z-index: 50 !important;
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, visibility 0.3s ease !important;
+    border: none !important;
+    box-shadow: none;
+    overflow: hidden;
+  }
+  
+  .navbar-fixed.hidden {
+    transform: translateY(-100%) !important;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .navbar-fixed.visible {
+    transform: translateY(0) !important;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Prevent layout shift */
+  .navbar-spacer {
+    height: 180px;
+  }
+  
+  .navbar-spacer.scrolled {
+    height: 120px;
   }
   
   @keyframes sweep {
