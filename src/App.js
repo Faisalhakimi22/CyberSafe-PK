@@ -5,7 +5,7 @@ import {
   Upload, Brain, Users, Trophy, Home, Shield, Eye,
   Zap, BookOpen, Award, CheckCircle2, AlertTriangle,
   Microscope, Globe, Camera, FileText, Search, Heart, Lightbulb,
-  Phone, Mail, MapPin, X
+  Phone, Mail, MapPin, X, Clock
 } from 'lucide-react';
 import UploadTest from './components/UploadTest';
 import Quiz from './components/Quiz';
@@ -838,38 +838,18 @@ function HomePage({ username }) {
             >
               <div className="bg-white/80 backdrop-blur-xl rounded-3xl shadow-xl hover:shadow-2xl border border-white/40 overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:bg-white/90">
                 {/* Featured Image Area */}
-                <div className="relative h-80 bg-gradient-to-br from-blue-900 via-slate-800 to-teal-900 overflow-hidden">
-                  {/* Animated Background Pattern */}
-                  <div className="absolute inset-0">
-                    <div className="absolute top-8 left-8 w-20 h-20 border border-cyan-400/30 rounded-2xl transform rotate-45 group-hover:rotate-90 transition-transform duration-700"></div>
-                    <div className="absolute top-20 right-16 w-16 h-16 border border-teal-400/40 rounded-full group-hover:scale-110 transition-transform duration-500"></div>
-                    <div className="absolute bottom-16 left-20 w-12 h-12 border border-blue-400/50 rounded-xl transform -rotate-12 group-hover:rotate-12 transition-transform duration-600"></div>
-                    <div className="absolute bottom-8 right-8 w-24 h-24 border border-purple-400/30 rounded-full group-hover:scale-105 transition-transform duration-700"></div>
-                  </div>
-                  
-                  {/* Central Cybersecurity Illustration */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="relative group-hover:scale-110 transition-transform duration-500">
-                      <div className="w-40 h-28 bg-gradient-to-r from-cyan-500/20 to-teal-500/20 rounded-2xl border-2 border-cyan-400/50 backdrop-blur-sm flex items-center justify-center relative">
-                        <div className="w-12 h-12 bg-gradient-to-r from-teal-400 to-cyan-400 rounded-xl flex items-center justify-center shadow-lg">
-                          <Shield className="h-6 w-6 text-white" />
-                        </div>
-                        {/* Floating elements */}
-                        <div className="absolute -top-3 -left-3 w-6 h-6 bg-cyan-400/70 rounded-lg animate-bounce"></div>
-                        <div className="absolute -top-3 -right-3 w-4 h-4 bg-teal-400/70 rounded-full animate-pulse"></div>
-                        <div className="absolute -bottom-3 -left-3 w-5 h-5 bg-blue-400/70 rounded-full animate-ping"></div>
-                        <div className="absolute -bottom-3 -right-3 w-6 h-6 bg-purple-400/70 rounded-lg animate-bounce delay-300"></div>
-                      </div>
-                      {/* Connection lines */}
-                      <div className="absolute top-4 -left-8 w-16 h-0.5 bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent"></div>
-                      <div className="absolute top-4 -right-8 w-16 h-0.5 bg-gradient-to-r from-transparent via-teal-400/60 to-transparent"></div>
-                      <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-0.5 h-16 bg-gradient-to-b from-transparent via-blue-400/60 to-transparent"></div>
-                    </div>
-                  </div>
+                <div className="relative h-96 overflow-hidden rounded-t-3xl">
+                  <img 
+                    src="/images/esmGemini_Generated_Image_86n5ad86n5ad86n5.png" 
+                    alt="External Attack Surface Management Cybersecurity Illustration"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  {/* Overlay for better text readability */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
                   
                   {/* Floating Badge */}
-                  <div className="absolute top-6 left-6">
-                    <span className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm text-teal-800 text-xs font-bold px-4 py-2 rounded-full border border-teal-200/50 shadow-lg">
+                  <div className="absolute top-6 left-6 z-10">
+                    <span className="inline-flex items-center gap-2 bg-white/95 backdrop-blur-sm text-teal-800 text-xs font-bold px-4 py-2 rounded-full border border-teal-200/50 shadow-lg">
                       <div className="w-2 h-2 bg-teal-500 rounded-full animate-pulse"></div>
                       FEATURED GUIDE
                     </span>
@@ -927,18 +907,16 @@ function HomePage({ username }) {
                 className="bg-white/80 backdrop-blur-xl rounded-2xl shadow-lg hover:shadow-xl border border-white/40 overflow-hidden transition-all duration-300 group cursor-pointer hover:scale-[1.02] hover:bg-white/90"
               >
                 {/* Compact Header */}
-                <div className="relative h-32 bg-gradient-to-br from-blue-800 via-indigo-700 to-cyan-700 overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="relative">
-                      <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <Search className="h-8 w-8 text-white" />
-                      </div>
-                      <div className="absolute -top-1 -right-1 w-4 h-4 bg-cyan-400 rounded-full animate-pulse"></div>
-                      <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-blue-400 rounded-full animate-ping"></div>
-                    </div>
-                  </div>
-                  <div className="absolute top-3 left-3">
-                    <span className="inline-flex items-center gap-1 bg-white/90 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">
+                <div className="relative h-48 overflow-hidden rounded-t-2xl">
+                  <img 
+                    src="/images/availbleGemini_Generated_Image_rbkx8qrbkx8qrbkx.png" 
+                    alt="EASM Buyer's Guide Cybersecurity Illustration"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
+                  <div className="absolute top-3 left-3 z-10">
+                    <span className="inline-flex items-center gap-1 bg-white/95 text-blue-800 text-xs font-bold px-3 py-1 rounded-full border border-blue-200/50 shadow-md">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
                       BLOG
                     </span>
@@ -970,23 +948,16 @@ function HomePage({ username }) {
                 className="bg-white/80 backdrop-blur-xl rounded-2xl shadow-lg hover:shadow-xl border border-white/40 overflow-hidden transition-all duration-300 group cursor-pointer hover:scale-[1.02] hover:bg-white/90"
               >
                 {/* Compact Header */}
-                <div className="relative h-32 bg-gradient-to-br from-emerald-700 via-teal-600 to-green-600 overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="relative">
-                      <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <div className="relative">
-                          {/* Modern umbrella icon */}
-                          <div className="w-10 h-5 bg-yellow-400 rounded-t-2xl border-2 border-white/50"></div>
-                          <div className="w-0.5 h-6 bg-yellow-500 mx-auto"></div>
-                          <div className="w-2 h-2 bg-yellow-500 rounded-full mx-auto -mt-0.5"></div>
-                        </div>
-                      </div>
-                      <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
-                      <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-teal-400 rounded-full animate-ping"></div>
-                    </div>
-                  </div>
-                  <div className="absolute top-3 left-3">
-                    <span className="inline-flex items-center gap-1 bg-white/90 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">
+                <div className="relative h-48 overflow-hidden rounded-t-2xl">
+                  <img 
+                    src="/images/3rdGemini_Generated_Image_asom5rasom5rasom.png" 
+                    alt="Cyber Resilience Defense Strategy Illustration"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
+                  <div className="absolute top-3 left-3 z-10">
+                    <span className="inline-flex items-center gap-1 bg-white/95 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full border border-emerald-200/50 shadow-md">
                       <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
                       INSIGHT
                     </span>
