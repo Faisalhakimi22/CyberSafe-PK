@@ -75,14 +75,14 @@ function NewsInsights() {
     {
       id: 2,
       title: "AI-Powered Romance Scams Target Pakistani Youth: New Research Findings",
-      excerpt: "FIA Cybercrime Wing reports sophisticated AI-generated profiles are increasingly used to target young Pakistanis on social media platforms.",
+      excerpt: "NCCIA Cybercrime Wing reports sophisticated AI-generated profiles are increasingly used to target young Pakistanis on social media platforms.",
       content: "Recent investigations by the Federal Investigation Agency's Cybercrime Wing have uncovered a disturbing trend of artificial intelligence-powered romance scams specifically targeting Pakistani youth aged 18-35...",
       date: "December 12, 2024",
       readTime: "6 min read",
       views: 12860,
       category: "Romance Scams",
       trending: true,
-      tags: ["AI Scams", "Youth", "Social Media", "FIA"],
+      tags: ["AI Scams", "Youth", "Social Media", "NCCIA"],
       author: "Dr. Ahmed Hassan, Cyber Psychology Expert",
       image: "/api/placeholder/600/300"
     },
@@ -90,7 +90,7 @@ function NewsInsights() {
       id: 3,
       title: "Cryptocurrency Investment Scams Rise 340% in Pakistan During 2024",
       excerpt: "Pakistan Telecommunication Authority warns of massive increase in cryptocurrency-related investment fraud schemes targeting Pakistani investors.",
-      content: "The Pakistan Telecommunication Authority (PTA) in collaboration with FIA has documented a staggering 340% increase in cryptocurrency investment scams, with reported losses reaching PKR 1.2 billion in 2024...",
+      content: "The Pakistan Telecommunication Authority (PTA) in collaboration with NCCIA has documented a staggering 340% increase in cryptocurrency investment scams, with reported losses reaching PKR 1.2 billion in 2024...",
       date: "December 10, 2024",
       readTime: "5 min read",
       views: 9850,
@@ -115,14 +115,14 @@ function NewsInsights() {
       severity: "High",
       urgent: true,
       tags: ["SMS Scam", "Pakistan Post", "Identity Theft", "Urgent"],
-      author: "FIA Cybercrime Alert System",
+      author: "NCCIA Cybercrime Alert System",
       image: "/api/placeholder/600/300"
     },
     {
       id: 5,
       title: "⚠️ Fake Job Offer Scams Using Real Company Names Increase 200%",
       excerpt: "Scammers are impersonating legitimate Pakistani companies to offer fake remote work opportunities, requesting upfront fees.",
-      content: "The FIA Cybercrime Wing has issued warnings about a significant increase in fake job offer scams where fraudsters impersonate well-known Pakistani companies...",
+      content: "The NCCIA Cybercrime Wing has issued warnings about a significant increase in fake job offer scams where fraudsters impersonate well-known Pakistani companies...",
       date: "December 16, 2024",
       readTime: "3 min read",
       views: 18750,
@@ -167,7 +167,7 @@ function NewsInsights() {
   const casesData = [
     {
       id: 8,
-      title: "Operation Digital Shield: FIA Recovers PKR 45 Million in Major Fraud Bust",
+      title: "Operation Digital Shield: NCCIA Recovers PKR 45 Million in Major Fraud Bust",
       excerpt: "Multi-city operation leads to arrest of 12 suspects running sophisticated online investment fraud scheme targeting overseas Pakistanis.",
       content: "The Federal Investigation Agency's Cybercrime Wing successfully concluded 'Operation Digital Shield', a three-month investigation that resulted in the recovery of PKR 45 million...",
       date: "December 13, 2024",
@@ -176,8 +176,8 @@ function NewsInsights() {
       category: "Success Stories",
       impact: "PKR 45M Recovered",
       arrests: 12,
-      tags: ["FIA Operation", "Investment Fraud", "Overseas Pakistanis", "Recovery"],
-      author: "FIA Cybercrime Wing",
+      tags: ["NCCIA Operation", "Investment Fraud", "Overseas Pakistanis", "Recovery"],
+      author: "NCCIA Cybercrime Wing",
       image: "/api/placeholder/600/300"
     },
     {

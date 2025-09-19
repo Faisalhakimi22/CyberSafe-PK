@@ -62,8 +62,8 @@ function Tracking() {
     assignedOfficer: {
       name: 'Sub-Inspector Fatima Khan',
       phone: '+92 21 1234567',
-      email: 'fatima.khan@fia.gov.pk',
-      department: 'FIA Cybercrime Unit'
+      email: 'fatima.khan@nccia.gov.pk',
+      department: 'NCCIA Cybercrime Unit'
     }
   };
 

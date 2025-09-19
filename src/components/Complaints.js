@@ -309,7 +309,7 @@ function Complaints() {
               Report a <span className="bg-gradient-to-r from-teal-400 to-accentgreen-400 bg-clip-text text-transparent">Cyber Incident</span>
             </h1>
             <p className="text-white/80 text-xl max-w-4xl mx-auto leading-relaxed">
-              All submissions are valuable and help us work with the FIA and trusted partners to protect victims of cybercrime in Pakistan.
+              All submissions are valuable and help us work with the NCCIA and trusted partners to protect victims of cybercrime in Pakistan.
             </p>
           </motion.div>
 
@@ -476,7 +476,7 @@ function Complaints() {
                   <div className="space-y-3">
                     <div className="flex items-start space-x-3">
                       <CheckCircle2 className="h-5 w-5 text-accentgreen-400 mt-1 flex-shrink-0" />
-                      <span>We may share reports with our law enforcement partners (FIA Cybercrime Wing, NCCIA) to support investigations.</span>
+                      <span>We may share reports with our law enforcement partners (NCCIA Cybercrime Wing) to support investigations.</span>
                     </div>
                     <div className="flex items-start space-x-3">
                       <CheckCircle2 className="h-5 w-5 text-accentgreen-400 mt-1 flex-shrink-0" />
@@ -489,7 +489,7 @@ function Complaints() {
                   </div>
                   <div className="bg-accentred-500/20 p-4 rounded-xl border border-accentred-400/30 mt-6">
                     <p className="text-white/90">
-                      <strong>Note:</strong> This report is not a legal filing — you may still need to report to FIA directly if required under law.
+                      <strong>Note:</strong> This report is not a legal filing — you may still need to report to NCCIA directly if required under law.
                     </p>
                   </div>
                 </div>
@@ -596,7 +596,7 @@ function Complaints() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Shield className="h-5 w-5 text-teal-400" />
-                  <span>Investigation by FIA cybercrime unit</span>
+                  <span>Investigation by NCCIA cybercrime unit</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle2 className="h-5 w-5 text-teal-400" />
@@ -780,7 +780,7 @@ function Complaints() {
                     >
                       <option value="" className="bg-darknavy-800">Select purpose</option>
                       <option value="information-only" className="bg-darknavy-800">Information only</option>
-                      <option value="request-assistance" className="bg-darknavy-800">Request CyberSafe Pakistan / FIA assistance</option>
+                        <option value="request-assistance" className="bg-darknavy-800">Request CyberSafe Pakistan / NCCIA assistance</option>
                     </select>
                   </div>
 
@@ -789,7 +789,7 @@ function Complaints() {
                       Other Agencies Notified
                     </label>
                     <div className="grid md:grid-cols-2 gap-3">
-                      {['FIA Cybercrime Wing', 'Police (local)', 'PTA (Pakistan Telecommunication Authority)', 'NGO/Helpline (e.g., Digital Rights Foundation)', 'Employer / University'].map((agency) => (
+                      {['NCCIA Cybercrime Wing', 'Police (local)', 'PTA (Pakistan Telecommunication Authority)', 'NGO/Helpline (e.g., Digital Rights Foundation)', 'Employer / University'].map((agency) => (
                         <label key={agency} className="flex items-center space-x-3 text-white/90">
                           <input
                             type="checkbox"
@@ -993,7 +993,7 @@ function Complaints() {
                       >
                         <option value="" className="bg-darknavy-800">Select preference</option>
                         <option value="anonymous" className="bg-darknavy-800">Keep me anonymous</option>
-                        <option value="alias-only" className="bg-darknavy-800">Share alias only with FIA</option>
+                        <option value="alias-only" className="bg-darknavy-800">Share alias only with NCCIA</option>
                         <option value="allow-followup" className="bg-darknavy-800">Allow follow-up (via contact details provided)</option>
                       </select>
                     </div>
@@ -1533,7 +1533,7 @@ function Complaints() {
                       <p>🤖 AI verification checks for deepfakes, tampering, and metadata authenticity</p>
                       <p>⚖️ Digital signatures ensure your evidence can be used in legal proceedings</p>
                       <p>🔒 Anonymous submissions accepted - contact info helps but isn't required</p>
-                      <p className="text-red-300 font-semibold">🚨 For urgent/life-threatening incidents → dial FIA Cybercrime Helpline (1991)</p>
+                      <p className="text-red-300 font-semibold">🚨 For urgent/life-threatening incidents → dial NCCIA Cybercrime Helpline (1991)</p>
                     </div>
                   </div>
                 </div>

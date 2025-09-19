@@ -182,7 +182,7 @@ function About() {
               <ul className="space-y-2 text-white/80">
                 <li className="flex items-center space-x-2">
                   <CheckCircle2 className="h-4 w-4 text-teal-400 flex-shrink-0" />
-                  <span>FIA Cybercrime Wing</span>
+                  <span>NCCIA Cybercrime Wing</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle2 className="h-4 w-4 text-teal-400 flex-shrink-0" />

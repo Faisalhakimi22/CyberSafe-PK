@@ -117,7 +117,7 @@ function ArticlePage() {
             content: "Taking control of your financial situation is crucial for both practical and psychological recovery.",
             keyPoints: [
               "Contact your bank and credit card companies immediately",
-              "File reports with FIA Cybercrime Wing and local police",
+              "File reports with NCCIA Cybercrime Wing and local police",
               "Monitor credit reports and set up fraud alerts",
               "Document all losses and communications",
               "Consider credit freezing if identity was compromised",
@@ -164,7 +164,7 @@ function ArticlePage() {
         conclusion: "Rebuilding trust after online fraud is a gradual process that requires patience with yourself. Focus on small steps, celebrate progress, and remember that becoming more cautious doesn't mean living in fear. With time and the right support, you can regain confidence in digital interactions while maintaining appropriate security measures.",
         
         resources: [
-          "FIA Cybercrime Wing: 1991",
+          "NCCIA Cybercrime Wing: 1991",
           "State Bank of Pakistan Fraud Hotline: 111-727-273",
           "Consumer Rights Protection: 1055",
           "Financial Planning Resources: cybersafepk.gov.pk/financial-security"

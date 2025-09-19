@@ -385,7 +385,7 @@ function Awareness() {
               <div className="flex items-center space-x-3">
                 <Phone className="h-6 w-6 text-accentred-400" />
                 <span className="text-white font-mono text-2xl font-bold">1991</span>
-                <span className="text-white/70">FIA Cybercrime</span>
+                <span className="text-white/70">NCCIA Cybercrime</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-6 w-6 text-accentred-400" />

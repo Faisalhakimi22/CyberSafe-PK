@@ -1193,7 +1193,7 @@ function HomePage({ username }) {
                     <MapPin className="h-5 w-5 text-teal-400" />
                   </div>
                   <div>
-                    <div className="font-semibold">FIA Cybercrime Wing</div>
+                    <div className="font-semibold">NCCIA Cybercrime Wing</div>
                     <div className="text-white/70">Islamabad, Pakistan</div>
                   </div>
                 </div>
@@ -1243,8 +1243,8 @@ function HomePage({ username }) {
               <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-teal-400/20 hover:border-teal-400/40 transition-colors duration-300">
                 <div className="text-center">
                   <Shield className="h-12 w-12 text-teal-400 mx-auto mb-3" />
-                  <div className="text-white font-semibold">FIA</div>
-                  <div className="text-white/60 text-sm">Federal Investigation Agency</div>
+                  <div className="text-white font-semibold">NCCIA</div>
+                  <div className="text-white/60 text-sm">National Cyber Crime Investigation Agency</div>
                 </div>
               </div>
               
