@@ -49,7 +49,7 @@ function App() {
     <Router>
       <div className="min-h-screen">
         <Navigation />
-        <main className="container mx-auto">
+        <main className="pt-[180px]">
           <Routes>
             <Route path="/" element={<HomePage username={username} />} />
             <Route path="/complaints" element={<Complaints />} />
@@ -516,7 +516,7 @@ function Navigation() {
   }, []);
 
   return (
-    <nav className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
       ? 'bg-deepblue-900/95 backdrop-blur-md shadow-lg'
       : 'bg-deepblue-900'
       }`}>
